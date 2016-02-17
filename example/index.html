@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaflet tilelayer plugin. </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.1/leaflet.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-beta.1/leaflet-src.js"></script>
+    <script src="../src/L.TileLayer.Mapshakers.js"></script>
+    <style>
+        #map {
+            position:fixed;
+            top:0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+
+    var map = new L.Map('map', {
+                center: new L.LatLng(50.0832, 14.4224),
+                zoom: 14
+            }
+    );
+
+    var layer1 = L.tileLayer.mapshakers({style: 'retro',key: 'cijywvxlm004rtikohhqf99jv'}).addTo(map);
+    var layer2 = L.tileLayer.mapshakers({style: 'default',key: 'cijywvxlm004rtikohhqf99jv'});
+    var layer3 = L.tileLayer.mapshakers({style: 'greyBright2',key: 'cijywvxlm004rtikohhqf99jv'});
+    var layer4 = L.tileLayer.mapshakers({style: 'greyBright',key: 'cijywvxlm004rtikohhqf99jv'});
+    var layer5 = L.tileLayer.mapshakers({style: 'greyDark',key: 'cijywvxlm004rtikohhqf99jv'});
+    var layer6 = L.tileLayer.mapshakers({style: 'relief',key: 'cijywvxlm004rtikohhqf99jv'});
+    var layer7 = L.tileLayer.mapshakers({style: 'tourism',key: 'cijywvxlm004rtikohhqf99jv'});
+    var layer8 = L.tileLayer.mapshakers({style: 'night',key: 'cijywvxlm004rtikohhqf99jv'});
+    var layer9 = L.tileLayer.mapshakers({style: 'blueprint',key: 'cijywvxlm004rtikohhqf99jv'});
+
+    var baseMaps = {
+        "retro": layer1,
+        "default": layer2,
+        "grey bright": layer4,
+        "grey bright 2": layer3,
+        "grey dark": layer5,
+        "relief": layer6,
+        "tourism": layer7,
+        "night": layer8,
+        "blueprint": layer9
+    };
+    L.control.layers(baseMaps, null).addTo(map);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "leaflet-mapkey-tiles",
+  "version": "0.0.1",
+  "description": "A leaflet tilelayer plugin providing Mapshakers map styles.",
+  "main": "src/L.TileLayer.Mapshakers.js",
+  "author": "Filip Zavadil",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": ">=0.7.3"
+  },
+  "keywords": ["gis", "map","tile","leaflet"]
+}
