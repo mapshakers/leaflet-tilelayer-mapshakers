@@ -5,6 +5,9 @@ Mapshakers map tiles for [Leaflet](http://leafletjs.com).
 
 *Requires Leaflet 0.7.0 or newer*
 
+## Tile key 
+For your Tile key send a request to the developer 
+
 ## Demo
 [Check out demo!](http://mapshakers.com/leaflet-tilelayer-mapshakers/example/)
 ## Using the plugin
