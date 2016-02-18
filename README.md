@@ -5,6 +5,8 @@ Mapshakers map tiles for [Leaflet](http://leafletjs.com).
 
 *Requires Leaflet 0.7.0 or newer*
 
+## Demo
+[Check out demo!](http://mapshakers.com/leaflet-tilelayer-mapshakers/example/)
 ## Using the plugin
 
 ## Available styles
@@ -18,7 +20,6 @@ Mapshakers map tiles for [Leaflet](http://leafletjs.com).
  * blueprint
 
 ### Usage
-
 Create a new L.tilelayer.mapshakers
 
 ```javascript
